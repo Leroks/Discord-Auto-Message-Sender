@@ -134,9 +134,15 @@ if __name__ == '__main__':
     human_margin = int(input("Human error margin: "))
     print()
 
+    sent_messages = set()  # To keep track of sent messages
+
     for i in range(0, num_messages):
-        # Choose a random message from the messages_list
-        random_message = choice(messages_list)
+        while True:
+            # Choose a random message from the messages_list that hasn't been sent
+            random_message = choice(messages_list)
+            if random_message not in sent_messages:
+                sent_messages.add(random_message)
+                break
 
         main(random_message)
         print(
