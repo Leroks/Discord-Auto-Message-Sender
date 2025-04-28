@@ -69,11 +69,11 @@ Edit it as you wish—there’s no hard limit.
 
 ## 5 . Troubleshooting
 
-| Symptom               | Possible Cause                 | Fix                                                          |
-| --------------------- | ------------------------------ | ------------------------------------------------------------ |
-| ``                    | Wrong or expired *User Token*. | Re‑capture the token via Dev Tools and update `config.json`. |
-| ``                    | Missing channel permissions.   | Make sure the account can post in that channel.              |
-| Bot exits immediately | Incorrect **Channel ID/URL**   | Verify both values; they must refer to the same channel.     |
+| Symptom                | Possible Cause                 | Fix                                                          |
+| ---------------------- | ------------------------------ | ------------------------------------------------------------ |
+| HTTP 401: Unauthorized | Wrong or expired *User Token*. | Re‑capture the token via Dev Tools and update `config.json`. |
+| \`\`                   | Missing channel permissions.   | Make sure the account can post in that channel.              |
+| Bot exits immediately  | Incorrect **Channel ID/URL**   | Verify both values; they must refer to the same channel.     |
 
 ---
 
